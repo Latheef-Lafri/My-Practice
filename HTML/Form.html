@@ -25,25 +25,71 @@
 
 <h1><center><u>Student Application</u></center></h1>
 
-<form method="get" action="" align="center">
+<form method="get" action="" >
 
-<p>Name:<br> 
-            <input type="text" name="name" size="40"></p>
+    <fieldset>
+        <legend><h2>Login Information</h2></legend>
+
+<p><label for="name">Name:</label><br> 
+            <input type="text" name="name" size="40" id="name"></p>
 
 <p>
-    Email:<br>
-    <input type="email" size="40">
+    <label for="email">Email:</label><br>
+    <input type="email" size="40" id="email">
 </p>      
+    </fieldset>
+
+
+<fieldset>
+    <legend><h2>Persional Information</h2></legend>
+<p>
+    <label for="address">Address:</label><br>
+    <textarea name="Address" id="address" cols="40" rows="5"></textarea></p>
 
 <p>
-    Address:<br>
-    <textarea name="Address" id="" cols="40" rows="5"></textarea></p>
-
-<p>
-    Gender:<br>
-    <input type="radio" name="gender" value="Male" checked="checked"> Male
-    <input type="radio" name="gender" value="Female"> Female
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" checked="checked" id="male"> <label for="male">Male</label>
+    <input type="radio" name="gender" value="Female" id="female"> <label for="female">Female</label>
 </p>    
+
+<p>
+    Date of Birth:
+    <input type="date" name="dob">
+</p>
+</fieldset>
+
+<fieldset>
+    <legend><h2>Educational Information</h2></legend>
+
+<p>
+    <label>Courses:</label><br>
+    <input type="checkbox"
+    name="Web Development" id="web-development"><label for="web-development">Web Development</label>
+
+    <input type="checkbox"
+    name="Networking Engineering" id="NE"><label for="NE">Networking Engineering</label>
+
+    <input type="checkbox"
+    name="AI" id="ai"><label for="ai">AI</label>
+
+    <input type="checkbox"
+    name="CS" id="cs"><label for="cs">CS</label>
+</p>
+
+
+
+<p>
+    Cirtificate:
+    <input type="file" name="cirtificate">
+</p>
+</fieldset>
+
+
+<br>
+<input type="submit" name="submit" value="submit">
+
+
+    
 
 
 </form>
