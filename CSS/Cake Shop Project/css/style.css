@@ -1,0 +1,62 @@
+body
+{
+    background:url(../images/img2.jpg) no-repeat;
+    background-size:cover
+}
+
+div
+{
+    background-color:rgba(35, 196, 196, 0.349);
+    color:rgb(9, 150, 185);
+    width:20%;
+    margin:0 auto;
+    margin-top:70px;
+    margin-left:1400px;
+    text-align:center;
+    border-radius:20px;
+    padding: 0px 20px;
+    box-shadow: -13px 13px 16px -1px rgba(0,0,0,0.75);
+}
+
+select
+{
+    width:80%;
+    background-color:skyblue;
+    color:rgb(7, 82, 40);
+    padding:5px;
+}
+
+input
+{
+    width:77%;
+    background-color:skyblue;
+    color:rgb(7, 82, 40);
+    padding:5px;
+}
+
+textarea
+{
+    width:80%;
+    background-color:skyblue;
+    color:rgb(7, 82, 40);
+    padding:5px;
+}
+
+button
+{
+    margin-bottom:20px;
+    border-radius:15px;
+    width:30%;
+    padding:5px;
+    font-size:15px;
+    background-color:skyblue;
+    color:rgb(11, 5, 92);
+    border:3px solid rgb(17, 110, 110);
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover
+{
+    box-shadow: 1px 1px 10px 5px rgba(204, 19, 19, 0.75);
+}
