@@ -1,0 +1,33 @@
+ul
+{
+    list-style:none;
+    background-color:bisque;
+    margin-left: 400px;
+    overflow:hidden;
+    width:50%;
+    
+    
+}
+
+ ul li 
+{
+    float:left;
+    padding:15px;
+
+} 
+
+ul li:hover
+
+{
+    background-color:darkred;
+}
+
+ul li a
+{
+    text-decoration:none;
+}
+
+ul li a:hover
+{
+    color:yellow;
+}
