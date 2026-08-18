@@ -1,0 +1,201 @@
+body
+{
+    margin:0px;
+}
+
+
+.header
+{
+    width:100%;
+    height:80px;
+    background-color:#174873;
+}
+
+.header h2
+{
+    color:white;
+    margin-left:700px;
+    position: absolute;
+}
+
+.header p
+{
+    color:white;
+    position:absolute;
+    margin-left:75%;
+    margin-top:50px;
+}
+
+.header span
+{
+    margin-left:20px;
+}
+
+.container
+{
+
+    width:80%;
+    height:1300px;
+    
+    margin:0 auto;
+}
+
+.div1
+{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(211, 189, 149);
+}
+
+.div1 img 
+{
+    height: 100%;
+    width: 200px;
+}
+
+.div1 ul
+{
+    list-style: none;
+    float: right;
+}
+
+.div1 ul li
+{
+    float: left;
+    padding: 10px 30px;
+}
+
+.div1 ul li a 
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.div1 ul li:hover
+{
+    background-color: aqua;
+}
+
+.div2
+{
+    width: 100%;
+    height: 600px;
+   
+}
+
+.div2 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.one 
+{
+    width: 32%;
+    height: 600px;
+    background-color: rgb(76, 179, 62);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: left;
+}
+
+.two 
+{
+    width: 32%;
+    height: 600px;
+    background-color: rgb(202, 139, 43);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 2%;
+}
+
+.three 
+{
+    width: 32%;
+    height: 600px;
+    background-color: rgb(168, 79, 153);
+    margin-top: 40px;
+    border-radius: 10%;
+    float: right;
+}
+
+.one h1
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.one p
+{
+    color: white;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.one a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
+
+.two h1
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.two p
+{
+    color: white;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.two a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
+
+.three h1
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.three p
+{
+    color: white;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.three a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 200px;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
