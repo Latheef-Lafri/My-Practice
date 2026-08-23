@@ -1,0 +1,10 @@
+.border
+{
+    width: 50%;
+    border-width: 5px 15px 10px 20px;
+
+    border-style: dashed solid dotted double;
+    
+  
+    border-color: red yellow blue green ;
+}
