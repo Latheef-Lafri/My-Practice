@@ -1,0 +1,36 @@
+.page
+{
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.container
+{
+    background-color: pink;
+    padding: 10px;
+}
+
+.leftside
+{
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+}
+
+.main
+{
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+.rightside
+{
+    width: 20%;
+    float: right;
+}
+
+.one 
+{
+    clear: both;
+}

@@ -1,0 +1,31 @@
+.page
+{
+    width: 1800px;
+    margin: 0 auto;
+} 
+
+.container
+{
+    background-color: greenyellow;
+}
+
+.main
+{
+    width: 65%;
+    float: left;
+    
+}
+
+.side
+{
+    width: 30%;
+    float: right;
+
+}
+
+
+
+.one 
+{
+    clear: both;
+}
