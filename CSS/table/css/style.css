@@ -1,0 +1,43 @@
+ table
+{
+    border: 3px solid crimson;
+    width: 85%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    
+}
+
+th,td
+{
+    border: 3px solid purple;
+    padding: 5px;
+}
+
+.clr1
+{
+    background-color: yellow;
+}
+
+.clr2
+{
+    background-color: pink;
+}
+
+.day
+{
+    text-align: center;
+} 
+
+
+/* table
+{
+    margin: 30%;
+
+}
+
+td
+{
+    border: 2px solid blue;
+    padding: 40px;
+   empty-cells: hide;
+} */

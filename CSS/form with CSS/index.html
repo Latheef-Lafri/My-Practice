@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>form with field set</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Login details</legend>
+
+            <p>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username">
+            </p>
+            
+            <p>
+                <label for="pasword">password</label>
+                <input type="password" name="password" id="password">
+                
+            </p>
+            <p>
+                <label for="email">email</label>
+                <input type="text" name="email" id="email">
+                
+            </p>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education details</legend>
+
+            <table>
+                <tr>
+                    <td><label for="qualification">qualification</label></td>
+                    <td><input type="text" name="qualification" id="qualification"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="collagename">collagename</label></td>
+                    <td><input type="text" name="collagename" id="collagename"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gradutaiondetails">gradutaiondetails</label></td>
+                    <td><input type="text" name="gradutaiondetails" id="gradutaiondetails"></td>
+                </tr>
+            </table>
+
+        
+        </fieldset>
+        <p>
+            <input type="submit" value="submit" name="sumbit">
+        </p>
+    </form>
+</body>
+</html>
