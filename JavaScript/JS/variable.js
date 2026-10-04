@@ -223,7 +223,7 @@ console.log(15!=="15");//true
 
 //Logical Operators
 
-console.log(!true);//false
+/*console.log(!true);//false
 console.log(!false);//true
 
 
@@ -254,6 +254,27 @@ console.log(10  && "ok");//ok true
 console.log("yes" && null);//null false
 console.log("" && 25);//false
 console.log(undefined && "aadhila");//undefined false
+*/
+
+
+
+
+
+
+
+//Arrays
+
+let students=["saara","aadhila","naflan","liyaurrahman","raja"]
+
+students.push("yoonus")
+students.push("kamal")
+
+
+console.log(students);
+
+
+
+
 
 
 
