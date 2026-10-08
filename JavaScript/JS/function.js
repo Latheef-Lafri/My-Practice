@@ -14,13 +14,25 @@ sayhello(150,40);
 
 */
 
-let visitedlist=['saara','aadhila','naflan','liyaurrahman'];
+/*let visitedlist=['saara','aadhila','naflan','liyaurrahman'];
 
  visitedlist.forEach(function(student,position)
   {
      console.log(`${++position }     ${student} ` );
   }
  )
+
+*/
+
+
+// for loop
+// for(variable;conditon;increment/decreament)
+
+
+for(my=0; my<=10; my++)
+{
+    console.log(my + "  Hello")
+}
 
 
 

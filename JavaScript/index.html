@@ -5,8 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="js/function.js"></script>
-<body>
+
+<!-- <body>
+<input id="num1" >
+<input id="num2" >
+<button onclick="answer()">Add</button>
+<p id="result">Result</p>
+
+
+<script>
+    let box1=document.getElementById("num1")
+    let box2=document.getElementById("num2")
+
+    let total=document.getElementById("result") 
+
+
+
+    function answer()
+    {
+            let box1value=Number(box1.value)
+    let box2value=Number(box2.value)
+
+    let tol=box1value+box2value
+        result.textContent=tol
+    }
+
     
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="box"></div>
+<button onclick="change()">Change Color</button>
+
+<style>
+    div
+    {
+     background-color: black;
+     width: 100px;
+     height: 100px;
+     transition: 2s;
+    }
+
+    .widthmax{
+        width: 100%;
+    }
+</style>
+
+
+<script>
+    let box=document.getElementById("box")
+
+    function change()
+    {
+        box.setAttribute("class","widthmax")
+    }
+</script>
+
+
 </body>
 </html>

@@ -264,13 +264,50 @@ console.log(undefined && "aadhila");//undefined false
 
 //Arrays
 
-let students=["saara","aadhila","naflan","liyaurrahman","raja"]
+/*let students=["saara","aadhila","naflan","liyaurrahman","raja"]
 
 students.push("yoonus")
 students.push("kamal")
 
 
 console.log(students);
+*/
+
+
+
+
+
+
+
+
+        
+// let box1=document.getElementById("num1")
+// let box2=document.getElementById("num2")
+// let result=document.getElementById("result")
+
+
+
+// function answer()
+// {
+
+//     let box1value=Number(box1.value)
+//     let box2value=Number(box2.value)
+
+//     let total=box1value+box2value
+
+//     result.textContent=total
+// }
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
