@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+</head>
+<body>
+    <img id="image" src="logo.png" alt="Logo">
+
+    <div id="parent">
+        <p>one</p>
+    </div>
+
+    <div id="toremove">Bye World</div>
+
+    <script>
+        //attr()
+        $('#image').attr('alt','New Logo')
+
+        //append()
+        $('#parent').append('<p>Two</p>');
+        $('#parent').append('<p>Three</p>');
+
+        //prepend
+        $('#parent').prepend('<p>Text 0</p>');
+
+        //remove
+        $('#toremove').remove();
+    </script>
+</body>
+</html>

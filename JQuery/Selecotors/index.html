@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+</head>
+<body>
+    <div id="one">Welcome</div>
+
+    <div class="two">Hello 1</div>
+    <div class="two">Hello 2</div>
+
+    <p>pargraph 1</p>
+    <p>pargraph 2</p>
+
+
+    <form action="">
+        <input type="text" placeholder="Enter Text">
+        <input type="password" placeholder="Enter Password">
+    </form>
+
+    <div class="container">
+        <p>pargraph1</p>
+        <p>pargraph2</p>
+    </div>
+
+
+    <div class="parent">
+        <p>Direct Child</p>
+        <div>
+            <p>Not a Direct Child</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        //ID Selector
+        $('#one').text("Welcome To Marstech");
+
+        //Class selector
+       $('.two').css('background-color','yellow');
+
+       //Element selector
+    //    $('p').hide();
+
+       //Attribute selector
+       $('[placeholder]').css('border','2px solid');
+
+       //Desendat selector
+       $('.container p').css('color','green');
+
+       //Child selector
+       $('.parent > p').css('font-weight','bold')
+
+    </script>
+
+</body>
+</html>
