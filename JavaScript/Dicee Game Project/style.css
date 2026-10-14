@@ -1,0 +1,44 @@
+.container
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice
+{
+    text-align: center;
+    display: inline-block;
+}
+
+body
+{
+    background-color: rgb(167, 123, 123);
+}
+
+h1
+{
+    margin: 30px;
+    font-size: 80px;
+    color: rgb(26, 94, 77);
+
+}
+
+p
+{
+font-size: 2rem;
+color: rgb(35, 192, 105);
+}
+
+img
+{
+    width: 80%;
+}
+
+footer
+{
+    margin-top: 5%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+}
