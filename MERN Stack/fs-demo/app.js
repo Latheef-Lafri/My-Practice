@@ -33,7 +33,7 @@ console.log("Next Operetion");
 */
 
 //Asynchronous
-const fs=require("fs");
+/*const fs=require("fs");
 fs.readFile("student.text","utf8",(err,data) =>
 {
     if (err)
@@ -46,3 +46,13 @@ fs.readFile("student.text","utf8",(err,data) =>
 });
 
 console.log("Next Operation");
+*/
+
+const fs = require("fs");
+const path = require("path");
+
+const filepath = path.join(__dirname, "student.txt");
+
+const data = fs.readFileSync(filepath, "utf-8");
+
+console.log(data);
