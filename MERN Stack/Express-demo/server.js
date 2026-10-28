@@ -6,9 +6,7 @@ app.get("/", (req, res) => {
     res.send("Hello World");
 });
 
-app.get("/about", (req, res) => {
-    res.send("This is the about page");
-});
+
 
 app.get("/contact", (req, res) => {
     res.send("contact us at marstech@gmail.com");
