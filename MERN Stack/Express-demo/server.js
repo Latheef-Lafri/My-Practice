@@ -29,6 +29,17 @@ app.get("/search",(req,res)=>
 });
 });
 
+app.get("/api/students",(req,res) =>
+{
+    res.json({
+        message:"students retrived Successfully",
+        student:[
+            {id:102,name:"ahmed"},
+        {id:103,name:"raja"}]
+    });
+});
+
+
 
 app.listen(3000, () => {
     console.log("server running");
