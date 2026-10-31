@@ -68,18 +68,18 @@ app.get("/students-demo/:id", (req, res) => {
 });
 
 //POST
-app.post("/students-demo",(req,res) =>
-{
-    const newstudent=req.body;
+// app.post("/students-demo",(req,res) =>
+// {
+//     const newstudent=req.body;
 
-    students.push(newstudent);
+//     students.push(newstudent);
 
-    res.status(201).json(
-        {message:"students added",
-         student:newstudent   
-        }
-    );
-});
+//     res.status(201).json(
+//         {message:"students added",
+//          student:newstudent   
+//         }
+//     );
+// });
 //PUT
 app.put("/students-demo/:id",(req,res) =>
 {
@@ -101,7 +101,7 @@ app.put("/students-demo/:id",(req,res) =>
     });
 
 });
-//PATCH
+
 
 
 app.listen(3000, () => {
