@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-
+app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Hello World");
@@ -127,7 +127,29 @@ app.put("/students-demo/:id",(req,res) =>
     });
 
 });
+//DELETE
+app.delete("/students-demo/:id",(req,res)=>
+{
+    const id=Number(req.params.id);
 
+    const index=students.findIndex((s)=> s.id===id);
+    
+    if(index===-1)
+    {
+        return res.status(404).json(
+            {
+                message:"student not found"
+            }
+        );
+
+        students.splice(index,1);
+        res.status(200).json(
+            {
+                message:"student deleted successfully"
+            }
+        );
+    }
+});
 
 
 app.listen(3000, () => {
