@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+
+
 app.get("/", (req, res) => {
     res.send("Hello World");
 });
@@ -80,6 +82,30 @@ app.get("/students-demo/:id", (req, res) => {
          }
      );
  });
+
+ //Patch
+ // PATCH - Update particular student details
+
+app.patch("/students-demo/:id", (req, res) => {
+
+    const id = Number(req.params.id);
+
+    const student = students.find((s) => s.id === id);
+
+    if (!student) {
+        return res.status(404).json({
+            message: "Student not found"
+        });
+    }
+
+    Object.assign(student, req.body);
+
+    res.status(200).json({
+        message: "Student updated successfully",
+        student: student
+    });
+
+});
 //PUT
 app.put("/students-demo/:id",(req,res) =>
 {
