@@ -11,19 +11,7 @@ export const getStudents = (req, res) => {
 };
 
 // GET student by ID
-// export const getStudentById = (req, res) => {
-//     const id = Number(req.params.id);
 
-//     const student = students.find((s) => s.id === id);
-
-//     if (!student) {
-//         return res.status(404).json({
-//             message: "Student not found"
-//         });
-//     }
-
-//     res.status(200).json(student);
-// };
 
 export const getStudentById = (req, res, next) => {
 
