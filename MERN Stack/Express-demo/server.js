@@ -55,8 +55,10 @@ app.get("/student-info",(req,res)=>
     );
 });
 
+// Error Handling Middleware
 app.use(errorhandler);
 
+// Start Server
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
