@@ -25,7 +25,7 @@ const requestlogger=(req,res,next)=>
 };
 app.use(requestlogger);
 
-// Student API routes
+// Existing Student API
 app.use("/api/students", studentRoutes);
 
 // Home route
