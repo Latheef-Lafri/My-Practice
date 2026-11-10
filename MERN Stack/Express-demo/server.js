@@ -43,7 +43,7 @@ app.get("/welcome",(req,res)=>
     );
 });
 
-
+//student info EJS
 app.get("/student-info",(req,res)=>
 {
     res.render("student-info",
