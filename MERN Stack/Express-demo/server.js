@@ -6,6 +6,7 @@ import studentRoutes from "./Routes/studentroutes.js";
 
 const app = express();
 
+// EJS Configuration
 app.set("view engine","ejs");
 
 // Middleware
