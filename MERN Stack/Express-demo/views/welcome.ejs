@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first EJS page</title>
-</head>
-<body>
-    <h1>Welcome <%=name%></h1>
-    <p>course: <%=course%></p>
-    <p>This page is created using EJS</p>
-</body>
-</html>
+<%- include("partials/header")%>
+
+<h1>Welcome <%=name%> </h1>
+<p>Course: <%=course%></p>
+<p>This IS OUR EJS HOME PAGE</p>
+
+
+<%- include("partials/footer")%>

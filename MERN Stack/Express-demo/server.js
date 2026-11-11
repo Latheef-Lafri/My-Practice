@@ -9,9 +9,11 @@ const app = express();
 // EJS Configuration
 app.set("view engine","ejs");
 
+
 // Middleware
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(express.static("public"));
 
 
 //custom middleware
@@ -38,10 +40,22 @@ app.get("/welcome",(req,res)=>
 {
     res.render("welcome",
         {
+            title:"Welcome",
             name:"Yoonus",
             course:"WE"
         }
     );
+});
+
+//student page EJS
+app.get("/student-page",(req,res)=>
+{
+    const students=[
+        {id:1,name:"Yasir",age:20,course:"SE"},
+        {id:2,name:"Naflan",age:22,course:"IT"},
+        {id:3,name:"Shakib",age:17,course:"IT"}
+    ];
+    res.render("student",{title:"Student Page",students:students});
 });
 
 //student info EJS
@@ -49,12 +63,22 @@ app.get("/student-info",(req,res)=>
 {
     res.render("student-info",
         {
+            title:"Student Information",
             name:"Yasir",
             age:15,
             course:"MERN Stack"
         }
     );
 });
+
+//About page
+app.get("/about",(req,res)=>
+{
+    res.render("about",{
+        title:"About us"
+    });
+}
+);
 
 // Error Handling Middleware
 app.use(errorhandler);
