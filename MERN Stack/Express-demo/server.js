@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
     res.send("Welcome to Student API");
 });
 
-//EJS route
+//welcome EJS route
 app.get("/welcome",(req,res)=>
 {
     res.render("welcome",
