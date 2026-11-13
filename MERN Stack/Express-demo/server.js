@@ -14,6 +14,15 @@ app.set("view engine","ejs");
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static("public"));
+app.use(express.urlencoded({extended:true}));
+
+
+//Temporary student data for EJS pages
+let students=[
+    {id:1,name:"Raja",age:20,course:"SE"},
+    {id:2,name:"kumar",age:22,course:"IT"},
+    {id:3,name:"Nimal",age:17,course:"IT"}
+];
 
 
 //custom middleware
@@ -50,11 +59,11 @@ app.get("/welcome",(req,res)=>
 //student page EJS
 app.get("/student-page",(req,res)=>
 {
-    const students=[
-        {id:1,name:"Yasir",age:20,course:"SE"},
-        {id:2,name:"Naflan",age:22,course:"IT"},
-        {id:3,name:"Shakib",age:17,course:"IT"}
-    ];
+    // const students=[
+    //     {id:1,name:"Yasir",age:20,course:"SE"},
+    //     {id:2,name:"Naflan",age:22,course:"IT"},
+    //     {id:3,name:"Shakib",age:17,course:"IT"}
+    // ];
     res.render("student",{title:"Student Page",students:students});
 });
 
@@ -79,6 +88,42 @@ app.get("/about",(req,res)=>
     });
 }
 );
+
+//Registration form page
+app.get("/register",(req,res)=>
+{
+    res.render("register",{
+         title:"Student Registration Form"
+    });
+});
+
+//Handle Redistration form
+app.post("/register",(req,res)=>
+{
+    const {name,age,course}=req.body;
+
+    //server-side validation
+    const parsedAge=Number(age);
+
+    if(
+        typeof name !=="string" ||name.trim()==="" ||
+        !Number.isInteger(parsedAge) ||parsedAge<=0 ||
+        typeof course !=="string" || !["SE","IT","CS"].includes(course)
+    )
+    {
+       return res.status(400).send("Invalid student details");
+    }
+
+    const newstudent={
+        id:Math.max(0,...students.map(s=>s.id))+1,
+        name:name.trim(),
+        age:parsedAge,
+        course:course
+    };
+
+    students.push(newstudent);
+    res.redirect("/student-page");
+});
 
 // Error Handling Middleware
 app.use(errorhandler);
