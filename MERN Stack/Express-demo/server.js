@@ -97,7 +97,7 @@ app.get("/register",(req,res)=>
     });
 });
 
-//Handle Redistration form
+//Handle Redistration form route
 app.post("/register",(req,res)=>
 {
     const {name,age,course}=req.body;
