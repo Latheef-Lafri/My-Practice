@@ -59,11 +59,7 @@ app.get("/welcome",(req,res)=>
 //student page EJS
 app.get("/student-page",(req,res)=>
 {
-    // const students=[
-    //     {id:1,name:"Yasir",age:20,course:"SE"},
-    //     {id:2,name:"Naflan",age:22,course:"IT"},
-    //     {id:3,name:"Shakib",age:17,course:"IT"}
-    // ];
+
     res.render("student",{title:"Student Page",students:students});
 });
 
