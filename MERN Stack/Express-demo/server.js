@@ -20,8 +20,8 @@ app.use(express.urlencoded({extended:true}));
 //Temporary student data for EJS pages
 let students=[
     {id:1,name:"Raja",age:20,course:"SE"},
-    {id:2,name:"kumar",age:22,course:"IT"},
-    {id:3,name:"Nimal",age:17,course:"IT"}
+    {id:2,name:"kumar",age:22,course:"IT"}
+    // {id:3,name:"Nimal",age:17,course:"IT"}
 ];
 
 
